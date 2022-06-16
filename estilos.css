@@ -255,8 +255,28 @@ h4 {
     }    
 
     @media screen and (max-width: 480px) {
+        header{
+            flex-wrap: wrap;
+            }
+        }
         nav ul { display: none; }
         .icon {  display: block;  }
+
+        header div, header a {
+            flex: 1 0 50%;
+        }
+
+        header nav {
+            flex-basis: 100%;
+        }
+        nav ul { 
+            display: none; 
+        }
+        nav.responsive ul {
+            display: block;
+            width: 100%;
+        }
+
         section {
             max-width: 480px;
             width: 100%;
@@ -281,7 +301,7 @@ h4 {
             
             .secundario div img {
                 margin-bottom: 1em;
-             
+                border: 5px solid rgb(217, 156, 249);
             }
             footer {
                 display: flex;
@@ -299,4 +319,3 @@ h4 {
             .footer p{
                 font-size: 10px;
             }
-}

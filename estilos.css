@@ -25,7 +25,6 @@ nav ul li a{
     font-size: 1.2rem;
 	font-family: 'Spline Sans Mono', monospace;
     padding-right: 2rem;
-    font-weight: bolder
 }
 a{
     text-decoration: none;
@@ -53,7 +52,14 @@ h3{
     text-align: center;
     text-decoration: underline 3px rgba(146, 27, 243, 0.925);
 }
+ h4{
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    text-decoration: underline 3px rgba(146, 27, 243, 0.925);
 
+ }
 section {
     max-width: 1300px;
     width: 90%;
@@ -70,6 +76,7 @@ section {
     display: flex;
     align-items: flex-end;
     color: white;
+    
     }   
 
 .principal div {
@@ -82,17 +89,55 @@ section {
       margin-bottom: 1%;
     }
 	
-.secundario {
+.principal2{
+    width: 100%;
+    height: 650px;
+    background-image: url("fotosp/fondogaleria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+
+.principal2 div {
+    padding: 5%;   
+    background-color: rgb(255, 255, 255, 0);
+    }
+
+    .principal2 img {
+      max-width: 60%;
+      margin-bottom: 1%;
+    }
+    
+    .secundario {
+        margin-top: 5%;
+        display: flex;
+        text-align: center;
+    }
+    
+    .secundario div {
+        width: 33%;
+        padding: 2%;
+    }
+    
+    .secundario div img {
+        width: 100%;
+        margin-bottom: 2em;
+        border: 5px solid rgb(217, 156, 249);
+    }
+    	
+.terciario {
         margin-top: 5%;
         display: flex;
     }
 
-.secundario div {
+.terciario div {
         width: 33%;
         padding: 2%;
     }
 
-.secundario div img {
+.terciario div img {
         width: 100%;
         margin-bottom: 2em;
         border: 5px solid rgb(217, 156, 249);
@@ -143,11 +188,10 @@ section {
     font-family: 'Spline Sans Mono', monospace;
     font-size: 15px;
     font-weight: 100;
-    font-weight: bolder
      }
 
 #argumento .img-conteiner{
-    background-image: url("fotosp/Nosedive_argumento-3.jpg");
+    background-image: url("fotosp/argumento.jpg");
     background-size: cover;
     background-position: center center;
     height: 500px;
@@ -155,6 +199,16 @@ section {
     border: 5px solid rgb(217, 156, 249);
     border-radius: 4px;
 }
+
+.cuarto div {
+    width: 50%;
+    padding: 2%;
+    font-family: 'Spline Sans Mono', monospace;
+}
+.cuarto div img {
+    width: 100%;
+    margin-bottom: 2em;
+    }
 
 button{
     font-family: 'Mukta', sans-serif;
@@ -172,6 +226,10 @@ button:hover{
     background-color: rgb(207, 124, 255);
 }
 
+h4 {
+    font-size: 1.5rem;
+}
+
     footer {
         display: flex;
         justify-content: center;
@@ -186,3 +244,59 @@ button:hover{
         margin-right: 1%;
         max-width: 2.5rem;
         }
+
+        .footer p{
+            font-size: 50px;
+            color: slategrey;
+        }
+
+    .icon{
+        display: none;
+    }    
+
+    @media screen and (max-width: 480px) {
+        nav ul { display: none; }
+        .icon {  display: block;  }
+        section {
+            max-width: 480px;
+            width: 100%;
+        }
+        .principal {
+            height: 250px;
+            }   
+            h1{
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                text-shadow: 0 0 8px whitesmoke;      
+            }
+            .secundario {
+                margin-top: 1%;
+                display: block;
+            }
+            
+            .secundario div {
+                width: 100%;
+            }
+            
+            .secundario div img {
+                margin-bottom: 1em;
+             
+            }
+            footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+            
+            }
+            
+            footer img {
+                padding-top: 1.5rem;
+                margin-right: 2%;
+                max-width: 1.5rem;
+                }
+            .footer p{
+                font-size: 10px;
+            }
+}

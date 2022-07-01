@@ -310,10 +310,10 @@ button:hover{
 
         header nav {
             flex-basis: 100%;
+            
         }
         nav ul { 
             display: none; 
-           
         }
         nav.responsive ul {
             display: block;
@@ -342,7 +342,7 @@ button:hover{
             display:block;
          }
         .secundario div img {
-            width: 200%;
+            width: 210%;
             margin-bottom: 1em;
             display: flex;
             justify-content: center;
@@ -350,11 +350,12 @@ button:hover{
             margin-right: 50px;
             }
         .secundario h4{
-            margin-left: 50px;
-            margin-right: 50px;
-            font-size: 10px;
+            margin-left: 85px;
+            margin-right: 70px;
+            font-size: 13px;
             text-decoration: underline 1px rgba(146, 27, 243, 0.925);
             display: flex;
+            display: inline;
              }
         footer .conteinerfooter{
             height: 150px;

@@ -313,10 +313,18 @@ button:hover{
         }
         nav ul { 
             display: none; 
+           
         }
         nav.responsive ul {
             display: block;
             width: 100%;
+         
+        }
+        .opciones li{
+            display: block;
+            float: none;
+            padding: 3%;
+
         }
 
         section {
@@ -331,7 +339,7 @@ button:hover{
             }
         .secundario {
             margin-top: 1%;
-            display: block;
+            display:block;
          }
         .secundario div img {
             width: 200%;
